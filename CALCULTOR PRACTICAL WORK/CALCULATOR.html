@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMPLE CALCULATOR</title>
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        body{
+            background-color: blanchedalmond;
+            align-items: center;
+            text-align: center;
+        }
+        .heading{
+            background-color: darkgray;
+            color: darkmagenta;
+            height: 40px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+        }
+
+       div h2{
+            text-align: center;
+            margin-top: 100px;
+     color: brown;
+        }
+       .searhbar{
+        margin-left: 70px;
+       }
+        .calculator{
+            align-self:center;
+            height: 650px;
+            width: 450px;
+            background-color: aquamarine;
+            border-radius: 20px;
+
+            margin-left: 200px;
+            margin-top: 100px;
+margin-bottom: 100px;
+        }
+
+        .numbers{
+            margin-top: 10px;
+            margin-bottom: 105px;
+        }
+        #num1{
+            background-color:burlywood;
+            border-radius: 5px;
+            height: 40px;
+
+        }
+        #num2{
+            background-color:burlywood;
+            border-radius: 5px;
+            height: 40px;
+            margin: 20px;
+
+        }
+
+        button{
+            border-radius: 5px;
+            height: 40px;
+            margin: 10px;
+
+
+        }
+
+        button:hover{
+            color:chocolate ;
+            background-color: aqua;
+        }
+
+        .op{
+            margin-bottom: 65px;
+        }
+
+        #cl{
+            margin-top: 40px;
+        }
+        a{
+            margin-right: 50px;
+            border-radius: 5px;
+            height: 10px;
+        }
+        a:hover{
+            color: brown;
+und-
+        }
+        .heading{
+            text-align: center;
+            align-items: center;
+        }
+        .img{
+        font-size: xx-large;
+        text-align: left;
+        margin-left: 120px;
+
+        }
+
+        .desc{
+            display: flex;
+            flex-direction: row;
+            height: 150px;
+            color:darkkhaki;
+            text-align: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+.img2{
+        font-size: xx-large;
+        text-align: left;
+        margin-left: 120px;
+
+        }
+
+        .ONE{
+            color: aqua;
+            text-align: center;
+            margin-top: 200px;
+        }
+
+        span{
+            color: blueviolet;
+        }
+
+        .FIRSTPART{
+            display: flex;
+            flex-direction: row ;
+        }
+       
+ .img3{
+        font-size: xx-large;
+        text-align: left;
+        margin-left: 120px;
+
+        }
+        .img4{
+        font-size: xx-large;
+        text-align: left;
+margin-left: 120px;
+        
+
+        }
+        .TABLE{
+            border-collapse:collapse ;
+            border-color: red ;
+            border-width: 2px;
+            border-style: double;
+
+            height: 500px;
+            width: 
+            900px;
+            align-items: center;
+            margin-left: 200px;
+        }
+td{
+    border-collapse:collapse ;
+            border-color: red ;
+            border-width: 2px;
+            border-style: double;
+
+}
+th{
+    border-collapse:collapse ;
+            border-color: red ;
+            border-width: 2px;
+            border-style: double;
+
+}
+
+th, td:hover{
+    background-color: brown;
+}
+
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="heading"  data-aos="fade-right">
+        ABDULLZ0023CALCULATOR
+
+        <div>
+            
+
+        <ul class="menu">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">CONTACTS</a>
+            <a href="#">LOCATION</a>
+            <a href="#">SERVICES</a>
+        
+        </ul>
+        </div>
+<div class="searhbar">
+        <input type="search" placeholder="SEARCH">
+        <button type="submit">SEARCH</button>
+        </div>
+    </div>
+
+
+<div class="FIRSTPART">
+
+    <div class="simple">
+                <h2 class="ONE" data-aos="fade-down-right">SIMPLEST WEB DESIGN&<br><br><br><span>CREATION USING</span><br><br>HTML, CSS AND JAVASCRIPT</h2>
+
+
+            </div>
+
+    <div class="calculator" data-aos="fade-left">
+        <h2>MY SIMPLE CALCULATOR</h2>
+        <div class="numbers" >
+        <input type="number" id="num1" placeholder="Enter your first number">
+        <input type="number" id="num2" placeholder="Enter your second number">
+        </div>
+        <div class="op">
+        <button id="add" onclick="addNumber()">Addition</button>
+        <button id="sub" onclick="subtractNumber()">Subtraction</button>
+        <button id="div" onclick="divideNumber()">Division</button>
+        <button id="mul" onclick="multiplyNumber()">Multiplication</button>
+        <button id="cl" onclick="clearNumbers()">Clear</button>
+</div>
+        <h3 id="result">RESULT</h3>
+    </div>
+    </div>
+
+    <div class="shop" data-aos="flip-down">
+        <table class="TABLE">
+           <tr> <th>s/No.:</th>
+             <th>KIND OF FOOD</th>
+             <th>APPEARANCE</th>
+              <th>PRICE</th>
+           </tr>
+           
+           <tr>
+            <td>1</td><td>UGALI NYAMA </td><td><img src="UGALINYAMA.jpg"></td> <td>15,000/=</td>
+           </tr>
+
+           <tr>
+            <td>2</td><td>PILAU NYAMA</td> <td><img src="WALINYAMA.jpg" alt=""></td><td>25,000/=</td>
+           </tr>
+
+           <tr>
+            <td>3</td><td>WALI SAMAKI</td> <td><img src="WALISAMAKI.jpg"></td><td>22,000/=</td>
+           </tr>
+
+           <tr>
+            <td>4</td><td>PIZZA</td> <td><img src="PIZZA.jpg" alt=""></td><td>45,000/=</td>
+           </tr>
+
+           <tr>
+            <td>5</td><td>BURGER</td> <td><img src="BURGER.jpg" alt=""></td><td>45,000/=</td>
+           </tr>
+
+           
+        </table>
+    </div>
+
+
+    <hr>
+        <h2 class="plat" data-aos="flip-right">VISIT US THROUGH OTHER PLATFORMS</h2>
+        <div class="desc" data-aos="flip-down">
+        <P class="img">FACEBOOK <a href="#"><i class="fa-brands fa-facebook-f"></i></a></P>
+        <p class="img2">YOUTUBE<img src="youtube.jpg"></p>
+        <P class="img3">TUBER<img src="TUBER.jpg"></P>
+        <p class="img4">CHROME<img src="CHROME.jpg"</p>
+
+    </div>
+
+
+
+    
+    
+
+    <script>
+        function addNumber(){
+            let num1 = Number(document.getElementById("num1").value);
+            let num2 = Number(document.getElementById("num2").value);
+            document.getElementById("result").innerHTML = "Result is " + (num1 + num2);
+        }
+
+        function subtractNumber(){
+            let num1 = Number(document.getElementById("num1").value);
+            let num2 = Number(document.getElementById("num2").value);
+            document.getElementById("result").innerHTML = "Result is " + (num1 - num2);
+        }
+
+        function multiplyNumber(){
+            let num1 = Number(document.getElementById("num1").value);
+            let num2 = Number(document.getElementById("num2").value);
+            document.getElementById("result").innerHTML = "Result is " + (num1 * num2);
+        }
+
+        function divideNumber(){
+            let num1 = Number(document.getElementById("num1").value);
+            let num2 = Number(document.getElementById("num2").value);
+            if(num2 === 0){
+                document.getElementById("result").innerHTML = "Cannot divide by zero!";
+            } else {
+                document.getElementById("result").innerHTML = "Result is " + (num1 / num2);
+            }
+        }
+
+        function clearNumbers(){
+            document.getElementById("num1").value = "";
+            document.getElementById("num2").value = "";
+            document.getElementById("result").innerHTML = "RESULT";
+        }
+    </script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
